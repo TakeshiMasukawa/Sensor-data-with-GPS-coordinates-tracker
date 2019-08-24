@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "linethingshrwithgpstracker",
+    "alias": "linethingshrwithgpstracker",
+    "builds": [
+        { "src": "server.js", "use": "@now/node" }
+      ],
+    "routes": [{ "src": "/.*", "dest": "server.js" }],
+    "env": {
+      "CHANNEL_SECRET": "Your LINE Bot channel secret here",
+      "ACCESS_TOKEN": "Your LINE Bot access token here",
+      "AMBIENT_CHANNEL_ID": "Your Ambient channel id here",
+      "AMBIENT_WRITE_KEY": "Your Ambient channel write key here"
+    }
+}
